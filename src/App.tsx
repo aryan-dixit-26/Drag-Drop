@@ -1,8 +1,6 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
+    <div className="border-2 border-solid border-black w-[500px]">
       Drag & Drop
     </div>
   );
