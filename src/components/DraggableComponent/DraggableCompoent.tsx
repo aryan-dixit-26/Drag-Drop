@@ -1,7 +1,16 @@
-const DraggableComponent = () => {
-    return <div>
+export type DraggableComponentProps = {
+  id: string;
+  title: string;
+  data: string;
+  droppingBoardId: string;
+};
 
-    </div>
-}
+const DraggableComponent = (props: DraggableComponentProps) => {
+  const { title } = props;
 
-export default DraggableComponent
+  return <div className="border border-solid border-slate-200 w-full h-[80px]">
+    {title}
+  </div>;
+};
+
+export default DraggableComponent;

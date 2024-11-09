@@ -1,9 +1,12 @@
+import { DragProvider } from "./context/DragContext";
 import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div >
-      <Home />
+    <div>
+      <DragProvider>
+        <Home />
+      </DragProvider>
     </div>
   );
 }
